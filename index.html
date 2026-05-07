@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>10 הדיברות לחיים בריאים יותר | ונשמרתם</title>
+  <meta name="description" content="הדרכה חינמית בפרקים קצרים (30 דקות בסך הכל) לגברים חרדים בני 40+: 10 הדיברות שיכולות למנוע מחלות לב, סוכר ולחץ דם — ולהאריך את החיים ביותר מעשור.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="10 הדיברות לחיים בריאים יותר | ונשמרתם">
+  <meta property="og:description" content="הדרכה חינמית של 30 דקות לגברים חרדים בני 40+ עם שי פרלא — מאמן כושר ותזונאי.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -143,45 +150,37 @@
     }
 
     .pain-img-strip {
-      display: block;
       width: 100%;
-      max-width: 420px;
       height: auto;
-      margin: 0 auto;
-      filter: brightness(0.92);
+      display: block;
+      filter: brightness(0.7);
     }
 
     /* ─── IMAGE BAND ─── */
     .image-band {
       position: relative;
       overflow: hidden;
-      max-height: 400px;
     }
 
     .image-band img {
       width: 100%;
-      height: 400px;
-      object-fit: cover;
-      object-position: center;
+      height: auto;
       display: block;
       filter: brightness(0.75);
     }
 
-    /* ─── תיקון תמונות במחשב בלבד (נייד נשאר זהה) ─── */
+    /* ─── תיקון תמונות במחשב — מגביל רוחב ומרכז ─── */
     @media (min-width: 768px) {
       .pain-img-strip {
-        max-width: 480px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .image-band {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        max-height: 550px;
-      }
-
-      .image-band img {
-        height: 550px;
       }
     }
 
@@ -644,9 +643,9 @@
     </h1>
 
     <div class="sub-box">
-      <div class="sub-box-label">בהדרכה חינמית של 30 דקות בלבד:</div>
+      <div class="sub-box-label">בהדרכה חינמית — פרקים קצרים, 30 דקות בסך הכל:</div>
       <p>
-        <strong>שי פרלא</strong> — מאמן כושר ותזונאי — חושף את 10 הדיברות שגברים חרדים בני 40+ לא יודעים שהם עושים כל יום שמקצרים את חייהם ומעלים את הסיכון ללחץ דם, כולסטרול וסוכר גבוהה.
+        <strong>שי פרלא</strong> — מאמן כושר ותזונאי — חושף את 10 הדיברות שגברים חרדים בני 40+ לא יודעים שהם עושים כל יום שמקצרים את חייהם ומעלים את הסיכון ללחץ דם, כולסטרול וסוכר גבוה.
       </p>
     </div>
   </section>
@@ -726,11 +725,11 @@
         </li>
         <li>
           <span class="num-badge">2</span>
-          <span>איך להצליח להכניס פעילות גופנית ביומיים בצורה פשוטה (כמו עליה במדרגות ועוד דברים שנמצאים מתחת לאף) דברים שיגרמו לך להיות יותר מרוכז בעבודה שלא האמנת שקיימים.</span>
+          <span>איך להצליח להכניס פעילות גופנית ליום-יום בצורה פשוטה (כמו עליה במדרגות ועוד דברים שנמצאים מתחת לאף) — דברים שיגרמו לך להיות יותר מרוכז בעבודה שלא האמנת שקיימים.</span>
         </li>
         <li>
           <span class="num-badge">3</span>
-          <span>איך להמשיך לאכול את האוכל שאתה אוכל היום ולהרגיש יותר טוב מבלי משנוי אחד פשוט.</span>
+          <span>איך להמשיך לאכול את האוכל שאתה אוכל היום ולהרגיש יותר טוב — מבלי שינוי אחד פשוט.</span>
         </li>
         <li>
           <span class="num-badge">4</span>
@@ -749,25 +748,25 @@
   <section class="form-section" id="form">
     <div class="form-wrapper">
       <div class="form-title">קבל את ההדרכה החינמית עכשיו</div>
-      <div class="form-subtitle">30 דקות שיכולות לשנות הכל</div>
-      <!-- TODO: connect form action to your CRM / webhook / email provider -->
-      <form action="#" method="POST">
+      <div class="form-subtitle">פרקים קצרים. 30 דקות. שיכולות לשנות הכל.</div>
+      <!-- TODO: replace action="#" with your form endpoint (CRM webhook / Formspree / Make / רב-מסר וכו') -->
+      <form action="#" method="POST" novalidate>
         <div class="form-group">
-          <input type="text" name="name" placeholder="שם מלא" required>
+          <input type="text" name="name" placeholder="שם מלא" autocomplete="name" required>
         </div>
         <div class="form-group">
-          <input type="tel" name="phone" placeholder="מספר טלפון" required>
+          <input type="tel" name="phone" placeholder="מספר טלפון (לדוגמה: 0501234567)" inputmode="tel" autocomplete="tel" pattern="^0[5-9]\d{8}$" title="הזן מספר טלפון ישראלי תקין בן 10 ספרות" required>
         </div>
         <div class="form-group">
-          <input type="email" name="email" placeholder="כתובת מייל" required>
+          <input type="email" name="email" placeholder="כתובת מייל" autocomplete="email" required>
         </div>
         <label class="consent-row">
           <input type="checkbox" name="consent" required>
-          <span class="consent-text">אני מאשר דיוור</span>
+          <span class="consent-text">אני מאשר/ת קבלת תכנים, הדרכות ומבצעים מ"ונשמרתם" בדוא"ל, SMS, וואטסאפ וטלפון. ניתן להסיר את ההרשמה בכל עת.</span>
         </label>
         <button type="submit" class="submit-btn">שלח לי את ההדרכה &larr;</button>
       </form>
-      <p class="form-privacy">הפרטים שלך שמורים אצלנו ולא יועברו לגורם שלישי</p>
+      <p class="form-privacy">הפרטים שלך שמורים אצלנו, לא יועברו לגורם שלישי, וניתן להסיר את ההרשמה בכל עת.</p>
     </div>
   </section>
 
