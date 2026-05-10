@@ -852,6 +852,29 @@
     <p>ונשמרתם &copy; 2025 | כל הזכויות שמורות</p>
   </footer>
 
+  <!-- Inject hidden "מקור הגעה" field into Rav-Messer form for source tracking -->
+  <script>
+    (function () {
+      var FIELD_NAME = 'מקור הגעה';
+      var FIELD_VALUE = 'וואצאפ';
+      function injectSource() {
+        document.querySelectorAll('form').forEach(function (form) {
+          if (!form.querySelector('input[name="' + FIELD_NAME + '"]')) {
+            var hidden = document.createElement('input');
+            hidden.type = 'hidden';
+            hidden.name = FIELD_NAME;
+            hidden.value = FIELD_VALUE;
+            form.appendChild(hidden);
+          }
+        });
+      }
+      injectSource();
+      var observer = new MutationObserver(injectSource);
+      observer.observe(document.body, { childList: true, subtree: true });
+      setTimeout(function () { observer.disconnect(); }, 30000);
+    })();
+  </script>
+
 </body>
 
 </html>
